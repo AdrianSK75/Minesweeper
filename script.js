@@ -11,10 +11,12 @@ function createBoard() {
         var button = document.createElement('button');
         button.type = 'button';
         button.className = 'btn';
+        button.id = i;
+        
         container.appendChild(button);
 
-        button.onclick = function() {
-            return getIndex();
+        button.onclick = function(event) {
+            alert(event.target.id + " " + event.buttons);
         }
 
         if(i % 9 == 0) {
@@ -25,18 +27,3 @@ function createBoard() {
     }
 
 }
-
-
-// buttons alert/events
-function getIndex() {
-    var button = document.querySelectorAll('.btn');
-
-    for(var i = 0; i < button.length; ++i) {
-        button[i].addEventListener('click', function(j) {
-               return console.log(j);
-          }.bind(null, i));
-    }
-}
-
-
-
