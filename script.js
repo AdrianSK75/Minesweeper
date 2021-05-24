@@ -15,7 +15,7 @@ function createBoard() {
         
         container.appendChild(button);
 
-        button.onclick = function(event) {
+        button.onmousedown = function(event) {
             alert(event.target.id + " " + event.buttons);
         }
 
