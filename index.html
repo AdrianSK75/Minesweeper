@@ -6,12 +6,19 @@
       
       body {
         text-align: center;
-        margin-top: 8%;
+        margin-top: 5%;
         background-color: #faf1e6;
 
       }
       
-      
+      #title {
+         font-size: 50px;
+         font-family: 'Montserrat Alternates', sans-serif;
+         color: #393e46;         
+      }
+      #first {
+        font-size: 50px;
+      }
       .btn {  
           background-color: #fdfaf6;
           font-size: 20px;
@@ -23,8 +30,9 @@
 </head>
 
 <body>
-  <button id = "first" onclick = "startGame()"><h1>START GAME</h1></button>
-  <div id="container"  ></div>
+  <h1 id = "title" onclick = "location.reload()">MINESWEEPER.</h1>
+  <button id = "first" onclick = "startGame()">&#128513;</button>
+  <div id="container"></div>
   <script src = "index.js"></script>
 </body>
 </html>
