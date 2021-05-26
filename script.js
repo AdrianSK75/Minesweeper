@@ -51,7 +51,6 @@ function makeSteps(btnTrigg) {
             while(--height) {
                     for(var i = btnTrigg + pos; i <= btnTrigg + pos + witdh; ++i) {
                         if(arrBtn[i] % 4 != 0) {
-                                console.log(arrBtn[i])
                                 button[i].style.background = "#3a6351";
                                 button[i].disabled = true;
                                 frq[i] = 1;
