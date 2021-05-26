@@ -38,8 +38,7 @@ function createBoard() {
 
 function makeSteps(btnTrigg) {
             if(frq[btnTrigg] == 2)
-                    return placeFlags(btnTrigg);
-            
+                    return placeFlags(btnTrigg);            
             if(arrBtn[btnTrigg] % 4 == 0) 
                     return detonateBombs();
             if(bombs == 0)
@@ -77,6 +76,7 @@ function generateBombs() {
 
 function placeFlag(btnTrigg) {           
             var button = document.querySelectorAll('.btn');
+            
             if(frq[btnTrigg] != 2) {    
                     button[btnTrigg].style.background = "#185adb";
                     if(arrBtn[btnTrigg] % 4 == 0) {
