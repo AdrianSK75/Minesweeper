@@ -25,7 +25,7 @@ function createBoard() {
                         if(mouseClick == 1) {
                                 return makeSteps(btnTrigg);
                         }
-                        return placeFlags(btnTrigg);
+                        return placeFlag(btnTrigg);
                     }
                             
                     if(i % 9 == 0) {
@@ -35,8 +35,6 @@ function createBoard() {
             }
 
 }
-
-
 
 function makeSteps(btnTrigg) {
             if(frq[btnTrigg] == 2)
@@ -77,7 +75,7 @@ function generateBombs() {
             }
 }
 
-function placeFlags(btnTrigg) {           
+function placeFlag(btnTrigg) {           
             var button = document.querySelectorAll('.btn');
             if(frq[btnTrigg] != 2) {    
                     button[btnTrigg].style.background = "#185adb";
